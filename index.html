@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Derecho Ambiental 4R | El Salvador Sostenible </title>
+    <meta name="description"
+        content="Sitio académico: El Salvador Sostenible: Jóvenes creando conciencia ambiental. Proyecto de Derecho Ambiental 4R." />
+    <script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@600;700&family=Manrope:wght@400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+
+    <script id="tailwind-config">
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#0B3A2E",
+                        secondary: "#1F6F5C",
+                        accent: "#8FB339",
+                        surface: "#F7F8F4",
+                        paper: "#FFFFFF",
+                        ink: "#1D2A23",
+                        muted: "#5B665F",
+                        line: "#D6DDD7",
+                        warm: "#F1E9D2",
+                        danger: "#A53F2B"
+                    },
+                    fontFamily: {
+                        h: ["Source Serif 4", "serif"],
+                        b: ["Manrope", "sans-serif"]
+                    },
+                    boxShadow: {
+                        soft: "0 18px 38px -22px rgba(9, 49, 39, .38)",
+                        card: "0 16px 34px -24px rgba(16, 46, 39, .35)"
+                    }
+                }
+            }
+        };
+    </script>
+    <link href="style.css" rel="stylesheet" />
+</head>
+
+<body class="bg-surface text-ink font-b overflow-x-hidden">
+    <nav class="fixed top-0 left-0 right-0 z-50 border-b border-line/80 backdrop-blur-md bg-surface/90" id="site-nav">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="h-16 flex items-center justify-between gap-4">
+                <a class="font-h text-lg sm:text-xl font-bold text-primary tracking-tight" href="#inicio">Derecho
+                    Ambiental
+                    4R</a>
+
+                <button aria-controls="mobile-menu" aria-expanded="false"
+                    class="md:hidden rounded-lg border border-line p-2 text-primary" id="menu-toggle" type="button">
+                    <span class="material-symbols-outlined">menu</span>
+                </button>
+
+                <div class="hidden md:flex items-center gap-5 text-sm font-semibold text-muted">
+                    <a class="nav-link" href="#inicio">Inicio</a>
+                    <a class="nav-link" href="#introduccion">Introducción</a>
+                    <a class="nav-link" href="#cuatro-r">4R</a>
+                    <a class="nav-link" href="#impacto">Impacto</a>
+                    <a class="nav-link" href="#fauna-flora">Fauna y Flora</a>
+                    <a class="nav-link" href="#propuestas">Propuestas</a>
+                    <a class="nav-link" href="#conclusion">Conclusión</a>
+                    <a class="nav-link" href="#fuentes">Fuentes</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="md:hidden hidden border-t border-line/80 bg-paper" id="mobile-menu">
+            <div class="max-w-7xl mx-auto px-4 py-3 flex flex-col gap-1 text-sm font-semibold text-muted">
+                <a class="mobile-link" href="#inicio">Inicio</a>
+                <a class="mobile-link" href="#introduccion">Introducción</a>
+                <a class="mobile-link" href="#cuatro-r">Las 4 R</a>
+                <a class="mobile-link" href="#impacto">Impacto de la basura</a>
+                <a class="mobile-link" href="#fauna-flora">Daños a fauna y flora</a>
+                <a class="mobile-link" href="#propuestas">Propuestas de solución</a>
+                <a class="mobile-link" href="#conclusion">Conclusión</a>
+                <a class="mobile-link" href="#fuentes">Fuentes</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="relative min-h-screen hero-shell flex items-center" id="inicio">
+        <img alt="Vista del Lago de Coatepeque en El Salvador" class="absolute inset-0 h-full w-full object-cover"
+            src="img/lagoCoatepeque.jpg" />
+        <div class="absolute inset-0 hero-overlay"></div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-24 sm:py-32">
+            <div class="grid lg:grid-cols-[1.1fr_.9fr] gap-8 items-start">
+                <div class="text-white space-y-6" data-reveal>
+                    <span
+                        class="inline-flex items-center rounded-full bg-white/15 border border-white/30 px-4 py-1.5 text-xs font-semibold uppercase tracking-[.15em]">Proyecto
+                        Académico · Derecho Ambiental</span>
+                    <h1 class="font-h text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">El Salvador Sostenible:
+                        Jóvenes creando conciencia ambiental</h1>
+                    <p class="text-base sm:text-lg text-white/90 max-w-3xl">La naturaleza es el hogar común de todos
+                        los
+                        seres vivos y su protección constituye una responsabilidad jurídica, social y humana.</p>
+                    <p class="text-base sm:text-lg text-white/85 max-w-3xl">Este sitio web presenta una reflexión
+                        académica sobre el papel del Derecho Ambiental en la defensa de los recursos naturales de El
+                        Salvador.</p>
+
+                    <div class="flex flex-wrap gap-3 pt-2">
+                        <a class="btn-solid" href="#introduccion">Explorar contenido</a>
+                        <a class="btn-outline" href="#fuentes">Ver fuentes</a>
+                    </div>
+
+                    <blockquote
+                        class="glass-card hero-quote rounded-2xl p-5 sm:p-6 text-sm sm:text-base leading-relaxed max-w-3xl">
+                        “Cada árbol protegido, cada río cuidado y cada acción responsable representan una esperanza
+                        más
+                        para el futuro de la humanidad.”
+                    </blockquote>
+                    <div class="flex flex-wrap gap-2 text-xs sm:text-sm text-white/90 font-semibold">
+                        <span class="px-3 py-1 rounded-full border border-white/35 bg-white/10">Respeto por la
+                            naturaleza</span>
+                        <span class="px-3 py-1 rounded-full border border-white/35 bg-white/10">Responsabilidad
+                            ambiental</span>
+                        <span class="px-3 py-1 rounded-full border border-white/35 bg-white/10">Justicia
+                            ecológica</span>
+                        <span class="px-3 py-1 rounded-full border border-white/35 bg-white/10">Desarrollo
+                            sostenible</span>
+                        <span class="px-3 py-1 rounded-full border border-white/35 bg-white/10">Compromiso social</span>
+                    </div>
+                </div>
+
+                <aside class="glass-card rounded-2xl p-6 sm:p-7 shadow-soft" data-reveal>
+                    <h2 class="font-h text-2xl font-bold text-primary mb-4">Ficha Académica</h2>
+                    <dl class="grid sm:grid-cols-2 gap-4 text-sm">
+                        <div>
+                            <dt class="text-muted font-semibold uppercase tracking-wide text-xs">Nombre del sitio</dt>
+                            <dd class="font-semibold text-ink">Derecho Ambiental 4R</dd>
+                        </div>
+                        <div>
+                            <dt class="text-muted font-semibold uppercase tracking-wide text-xs">Estudiante</dt>
+                            <dd class="font-semibold text-ink">Ludwing Alejandro Corleto Jovel</dd>
+                        </div>
+                        <div class="sm:col-span-2">
+                            <dt class="text-muted font-semibold uppercase tracking-wide text-xs">Tema</dt>
+                            <dd class="font-semibold text-ink">El Salvador Sostenible: Jóvenes creando conciencia
+                                ambiental</dd>
+                        </div>
+                        <div>
+                            <dt class="text-muted font-semibold uppercase tracking-wide text-xs">Asignatura</dt>
+                            <dd class="font-semibold text-ink">Derecho Ambiental</dd>
+                        </div>
+                        <div>
+                            <dt class="text-muted font-semibold uppercase tracking-wide text-xs">Facultad</dt>
+                            <dd class="font-semibold text-ink">Derecho UTEC</dd>
+                        </div>
+                        <div class="sm:col-span-2">
+                            <dt class="text-muted font-semibold uppercase tracking-wide text-xs">Docente</dt>
+                            <dd class="font-semibold text-ink">Carolina Lucero Morán</dd>
+                        </div>
+                    </dl>
+                    <div class="mt-6 rounded-xl bg-primary/8 border border-primary/20 p-4 text-sm text-primary">
+                        “La Tierra puede existir sin nosotros, pero nosotros jamás podremos existir sin ella.
+                        Cuidarla
+                        no es una opción, es un deber con la vida.”
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="section-shell" id="introduccion">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid lg:grid-cols-2 gap-10 items-start">
+                    <div class="space-y-6" data-reveal>
+                        <p class="eyebrow">Introducción al problema ambiental en El Salvador</p>
+                        <h2 class="section-title">¿Qué está pasando con nuestro entorno?</h2>
+
+                        <div class="space-y-4 text-base leading-relaxed text-muted">
+                            <p>El problema ambiental comprende todas aquellas acciones y situaciones que dañan la
+                                naturaleza y afectan la vida de las personas. Entre ellas se encuentran la
+                                contaminación
+                                del agua, la tala de árboles, el exceso de basura, la quema de desechos y el cambio
+                                climático.</p>
+                            <p>El Salvador posee volcanes, lagos, bosques y biodiversidad; sin embargo, es vulnerable al
+                                deterioro ambiental. La contaminación de ríos, la deforestación y la acumulación de
+                                residuos afectan la salud, la economía y la calidad de vida de la población.</p>
+                        </div>
+
+                        <div class="modern-card p-6">
+                            <h3 class="font-h text-xl font-bold text-primary mb-3">Relación entre acciones humanas y
+                                deterioro ambiental</h3>
+                            <ul class="list-grid">
+                                <li>Tirar basura en calles, ríos y playas.</li>
+                                <li>Tala excesiva de árboles.</li>
+                                <li>Contaminación industrial.</li>
+                                <li>Emisión de gases contaminantes.</li>
+                                <li>Quemas agrícolas y forestales.</li>
+                                <li>Uso irresponsable del agua.</li>
+                            </ul>
+                        </div>
+
+                        <blockquote class="quote-box">“La naturaleza nos brinda todo para vivir, pero depende de
+                            nosotros decidir si queremos protegerla o destruirla.”</blockquote>
+                    </div>
+
+                    <div class="grid sm:grid-cols-2 gap-4" data-reveal>
+                        <figure class="image-tile sm:col-span-2 h-[260px]">
+                            <img alt="Vista urbana con contaminación atmosférica" src="img/contaminacion1.jpg" />
+                            <figcaption>Niebla contaminante y deterioro de la calidad del aire.</figcaption>
+                        </figure>
+                        <figure class="image-tile h-[220px]">
+                            <img alt="Ribera de río con basura acumulada" src="img/contaminacion2.jpg" />
+                            <figcaption>Desechos en cuerpos de agua.</figcaption>
+                        </figure>
+                        <figure class="image-tile h-[220px]">
+                            <img alt="Zona deforestada por tala" src="img/sequias.jpg" />
+                            <figcaption>Deforestación y pérdida de cobertura vegetal.</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-shell section-warm" id="cuatro-r">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="max-w-3xl" data-reveal>
+                    <p class="eyebrow">Las 4 R del cuidado ambiental</p>
+                    <h2 class="section-title">Pequeñas acciones que pueden transformar El Salvador</h2>
+                    <p class="text-muted mt-3">En un país donde aumentan los desechos y la contaminación, las 4 R son
+                        hábitos concretos para cambiar la forma en que consumimos y cuidamos nuestro entorno.</p>
+                </div>
+
+                <div class="grid md:grid-cols-2 xl:grid-cols-4 gap-5 mt-8">
+                    <article class="modern-card" data-reveal>
+                        <figure class="image-tile h-44 mb-4">
+                            <img alt="Infografía sobre reducción de plásticos" src="img/yaSeHace1.jpg" />
+                        </figure>
+                        <h3 class="card-title">Reducir</h3>
+                        <p class="card-text">Disminuir el consumo innecesario, especialmente de plásticos y
+                            desechables.
+                        </p>
+                        <ul class="card-list">
+                            <li>Usar bolsas reutilizables.</li>
+                            <li>Evitar pajillas y cubiertos desechables.</li>
+                            <li>Llevar termo o botella reutilizable.</li>
+                            <li>Comprar productos con menos empaque.</li>
+                        </ul>
+                        <p class="card-example">Ejemplo local: pupuserías que usan bolsas de papel o recipientes
+                            biodegradables.</p>
+                    </article>
+
+                    <article class="modern-card" data-reveal>
+                        <figure class="image-tile h-44 mb-4">
+                            <img alt="Botellas plásticas convertidas en maceteros" src="img/yaSeHace4.jpg" />
+                        </figure>
+                        <h3 class="card-title">Reutilizar</h3>
+                        <p class="card-text">Dar nuevos usos a objetos antes de desecharlos para evitar más basura.</p>
+                        <ul class="card-list">
+                            <li>Botellas convertidas en macetas.</li>
+                            <li>Ropa vieja como bolsas o trapos.</li>
+                            <li>Cajas usadas como organizadores.</li>
+                            <li>Papel por un lado para notas.</li>
+                        </ul>
+                        <p class="card-example">Ejemplo local: llantas reutilizadas como maceteros en escuelas y
+                            parques.</p>
+                    </article>
+
+                    <article class="modern-card" data-reveal>
+                        <figure class="image-tile h-44 mb-4">
+                            <img alt="Estación de reciclaje con separación por material" src="img/yaSeHace6.jpg" />
+                        </figure>
+                        <h3 class="card-title">Reciclar</h3>
+                        <p class="card-text">Separar residuos correctamente para que vuelvan al ciclo de
+                            aprovechamiento.
+                        </p>
+                        <ul class="card-list">
+                            <li>Clasificar plástico, papel, vidrio y metal.</li>
+                            <li>Usar puntos ecológicos comunitarios.</li>
+                            <li>Entregar residuos limpios y secos.</li>
+                            <li>Promover cultura de reciclaje en casa y escuela.</li>
+                        </ul>
+                        <p class="card-example">Ejemplo local: alcaldías y centros educativos con puntos ecológicos.
+                        </p>
+                    </article>
+
+                    <article class="modern-card" data-reveal>
+                        <figure class="image-tile h-44 mb-4">
+                            <img alt="Residuos orgánicos para compostaje" src="img/yaSeHace8.jpg" />
+                        </figure>
+                        <h3 class="card-title">Recuperar</h3>
+                        <p class="card-text">Reaprovechar materiales y devolver nutrientes a la tierra mediante
+                            compostaje.</p>
+                        <ul class="card-list">
+                            <li>Cáscaras de frutas y verduras.</li>
+                            <li>Hojas secas y café molido.</li>
+                            <li>Cáscaras de huevo.</li>
+                            <li>Abono natural para huertos y cultivos.</li>
+                        </ul>
+                        <p class="card-example">Ejemplo local: familias rurales que usan orgánicos para abonar huertos.
+                        </p>
+                    </article>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-5 mt-6" data-reveal>
+                    <figure class="image-tile h-52">
+                        <img alt="Compost orgánico listo para uso" src="img/yaSeHace9.jpg" />
+                        <figcaption>Compostaje: transformar residuos en vida.</figcaption>
+                    </figure>
+                    <figure class="image-tile h-52">
+                        <img alt="Imagen sobre consumo responsable a granel" src="img/yaSeHace2.jpg" />
+                        <figcaption>Reducir también significa comprar con menor empaque.</figcaption>
+                    </figure>
+                </div>
+
+                <p class="section-closure" data-reveal>“Cuidar el medio ambiente no requiere acciones gigantes;
+                    requiere
+                    millones de pequeñas decisiones correctas todos los días.”</p>
+            </div>
+        </section>
+
+        <section class="section-shell" id="impacto">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="max-w-3xl" data-reveal>
+                    <p class="eyebrow">Impacto de la basura en El Salvador</p>
+                    <h2 class="section-title">La contaminación no desaparece, solo cambia de lugar</h2>
+                    <p class="text-muted mt-3">Calles, ríos, playas y comunidades enfrentan las consecuencias de los
+                        desechos sólidos: daños ambientales, riesgos sanitarios y pérdida de calidad de vida.</p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-5 mt-8">
+                    <article class="impact-card" data-reveal>
+                        <figure class="image-tile h-52">
+                            <img alt="Río Acelhuate con desechos" src="img/acelhuate.jpg" />
+                        </figure>
+                        <div class="p-5">
+                            <h3 class="card-title">Contaminación de ríos: Acelhuate</h3>
+                            <p class="card-text">Considerado uno de los ríos más contaminados por vertido de basura y
+                                aguas residuales urbanas.</p>
+                            <ul class="card-list compact">
+                                <li>Muerte de peces y especies acuáticas.</li>
+                                <li>Agua contaminada para comunidades.</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="impact-card" data-reveal>
+                        <figure class="image-tile h-52">
+                            <img alt="Vista del río Lempa" src="img/lempa.jpg" />
+                        </figure>
+                        <div class="p-5">
+                            <h3 class="card-title">Contaminación de ríos: Lempa</h3>
+                            <p class="card-text">El río más importante del país también recibe residuos sólidos y
+                                otras
+                                descargas que afectan sus ecosistemas.</p>
+                            <ul class="card-list compact">
+                                <li>Daños a cultivos agrícolas.</li>
+                                <li>Propagación de enfermedades.</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="impact-card" data-reveal>
+                        <figure class="image-tile h-52">
+                            <img alt="Acumulación de basura en zona costera" src="img/salud.jpg" />
+                        </figure>
+                        <div class="p-5">
+                            <h3 class="card-title">Basura en playas: La Libertad</h3>
+                            <p class="card-text">Durante temporadas vacacionales se incrementa la acumulación de
+                                plástico,
+                                botellas y bolsas en áreas costeras.</p>
+                            <ul class="card-list compact">
+                                <li>Tortugas atrapadas en plástico.</li>
+                                <li>Peces afectados por microplásticos.</li>
+                                <li>Aves marinas heridas o intoxicadas.</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="impact-card" data-reveal>
+                        <figure class="image-tile h-52">
+                            <img alt="Quema de desechos sólidos" src="img/quema.jpg" />
+                        </figure>
+                        <div class="p-5">
+                            <h3 class="card-title">Quema de desechos sólidos</h3>
+                            <p class="card-text">La quema de basura libera sustancias tóxicas que contaminan el aire y
+                                afectan directamente la salud humana.</p>
+                            <ul class="card-list compact">
+                                <li>Tos y problemas respiratorios.</li>
+                                <li>Irritación de ojos y garganta.</li>
+                                <li>Mayor riesgo para niñez y adultos mayores.</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="grid sm:grid-cols-2 xl:grid-cols-4 gap-4 mt-6" data-reveal>
+                    <div class="consequence-chip">Inundaciones por drenajes obstruidos.</div>
+                    <div class="consequence-chip">Contaminación del suelo agrícola.</div>
+                    <div class="consequence-chip">Presencia de bacterias, mosquitos y malos olores.</div>
+                    <div class="consequence-chip">Incremento de enfermedades infecciosas.</div>
+                </div>
+
+                <p class="section-closure" data-reveal>“La basura que hoy ignoramos puede convertirse mañana en la
+                    contaminación que destruya nuestra salud, nuestros ríos y nuestro futuro.”</p>
+            </div>
+        </section>
+
+        <section class="section-shell section-forest" id="fauna-flora">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="max-w-3xl" data-reveal>
+                    <p class="eyebrow">Daños a la fauna y flora de El Salvador</p>
+                    <h2 class="section-title">Cuando desaparece una especie, desaparece parte de nuestro futuro</h2>
+                    <p class="text-muted mt-3">La biodiversidad salvadoreña enfrenta amenazas por contaminación, tala
+                        ilegal, urbanización y acumulación de basura.</p>
+                </div>
+
+                <div class="grid lg:grid-cols-2 gap-5 mt-8">
+                    <article class="modern-card" data-reveal>
+                        <h3 class="card-title">Fauna afectada</h3>
+                        <p class="card-text">Los animales sufren la contaminación de playas, ríos y la pérdida de
+                            hábitats.</p>
+                        <ul class="card-list">
+                            <li>Tortugas marinas: Carey, Golfina y Baula.</li>
+                            <li>Aves silvestres: Lora Nuca Amarilla, Águila Crestada y Perico Frentinaranja.</li>
+                            <li>Peces y vida acuática afectados por plásticos, aguas residuales y químicos.</li>
+                        </ul>
+                        <h4 class="mini-title">Especies en alto riesgo en El Salvador</h4>
+                        <ul class="pill-list">
+                            <li>Ocelote</li>
+                            <li>Mono Araña</li>
+                            <li>Lora Nuca Amarilla</li>
+                            <li>Tortuga Carey</li>
+                            <li>Rana de Árbol Salvadoreña</li>
+                        </ul>
+                    </article>
+
+                    <article class="modern-card" data-reveal>
+                        <h3 class="card-title">Flora dañada</h3>
+                        <p class="card-text">Sin árboles, bosques y manglares, no existe equilibrio ambiental.</p>
+                        <ul class="card-list">
+                            <li>Deforestación por expansión urbana, agricultura descontrolada e incendios.</li>
+                            <li>Manglares amenazados por contaminación y tala costera.</li>
+                            <li>Bosques cafetaleros con pérdida de cobertura y biodiversidad.</li>
+                            <li>Áreas naturales protegidas bajo presión por actividades irresponsables.</li>
+                        </ul>
+                        <h4 class="mini-title">Áreas destacadas</h4>
+                        <ul class="pill-list">
+                            <li>Parque Nacional El Imposible</li>
+                            <li>Parque Nacional Montecristo</li>
+                            <li>Bahía de Jiquilisco</li>
+                        </ul>
+                    </article>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-4 mt-6" data-reveal>
+                    <figure class="image-tile h-56">
+                        <img alt="Tortuga marina en playa salvadoreña" src="img/tortuga.jpg" />
+                        <figcaption>Tortuga marina, especie vulnerable.</figcaption>
+                    </figure>
+                    <figure class="image-tile h-56">
+                        <img alt="Tortuga afectada por plástico en el océano" src="img/faunaMarina3.jpg" />
+                        <figcaption>La contaminación marina amenaza la fauna.</figcaption>
+                    </figure>
+                    <figure class="image-tile h-56">
+                        <img alt="Ecosistema de manglares en El Salvador" src="img/manglares3.jpg" />
+                        <figcaption>Manglares: barrera natural y refugio de especies.</figcaption>
+                    </figure>
+                </div>
+
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-6" data-reveal>
+                    <div class="cause-card">Tala ilegal</div>
+                    <div class="cause-card">Contaminación de agua, aire y suelo</div>
+                    <div class="cause-card">Urbanización sin control ambiental</div>
+                    <div class="cause-card">Basura y plásticos en ecosistemas</div>
+                </div>
+
+                <p class="section-closure" data-reveal>“Proteger la fauna y la flora no significa salvar únicamente
+                    animales y plantas; significa proteger el equilibrio de la vida misma.”</p>
+            </div>
+        </section>
+
+        <section class="section-shell" id="propuestas">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="max-w-3xl" data-reveal>
+                    <p class="eyebrow">Propuestas de solución</p>
+                    <h2 class="section-title">El cambio ambiental comienza con acciones concretas</h2>
+                    <p class="text-muted mt-3">La solución combina compromiso personal, educación ambiental y
+                        participación comunitaria.</p>
+                </div>
+
+                <div class="grid lg:grid-cols-2 gap-6 mt-8">
+                    <div class="space-y-4" data-reveal>
+                        <article class="modern-card">
+                            <h3 class="card-title">Acciones personales</h3>
+                            <ul class="card-list">
+                                <li>Separar correctamente la basura.</li>
+                                <li>Utilizar bolsas reutilizables.</li>
+                                <li>Reducir el uso de plástico desechable.</li>
+                                <li>Ahorrar agua y energía eléctrica.</li>
+                                <li>Sembrar árboles o plantas en casa.</li>
+                                <li>Evitar tirar basura en calles o ríos.</li>
+                                <li>Usar transporte alternativo cuando sea posible.</li>
+                            </ul>
+                        </article>
+
+                        <article class="modern-card">
+                            <h3 class="card-title">Acciones desde la escuela</h3>
+                            <ul class="card-list">
+                                <li>Implementar puntos de reciclaje.</li>
+                                <li>Realizar campañas de reforestación.</li>
+                                <li>Organizar charlas ambientales.</li>
+                                <li>Desarrollar jornadas de limpieza escolar.</li>
+                                <li>Promover ferias ecológicas y proyectos ambientales.</li>
+                            </ul>
+                            <p class="card-example">Idea: “Eco Retos Escolares” para reducir residuos por salón.
+                            </p>
+                        </article>
+
+                        <article class="modern-card">
+                            <h3 class="card-title">Acciones comunitarias</h3>
+                            <ul class="card-list">
+                                <li>Jornadas de limpieza en calles y ríos.</li>
+                                <li>Campañas de reforestación.</li>
+                                <li>Instalación de depósitos de basura.</li>
+                                <li>Centros de reciclaje comunitario.</li>
+                                <li>Limpieza de playas y quebradas.</li>
+                                <li>Denuncia de tala ilegal y contaminación.</li>
+                            </ul>
+                        </article>
+                    </div>
+
+                    <div class="space-y-4" data-reveal>
+                        <article class="modern-card">
+                            <h3 class="card-title">Campañas de concienciación ambiental</h3>
+                            <ul class="card-list">
+                                <li>“Una botella menos, un futuro mejor”.</li>
+                                <li>“Adopta un árbol”.</li>
+                                <li>“Eco Challenge El Salvador”.</li>
+                                <li>“Playas limpias, océanos vivos”.</li>
+                            </ul>
+                        </article>
+
+                        <figure class="image-tile h-56">
+                            <img alt="Jornada de limpieza en playas" src="img/recoleccion3.jpg" />
+                            <figcaption>Limpieza de playas con participación juvenil.</figcaption>
+                        </figure>
+                        <figure class="image-tile h-56">
+                            <img alt="Jóvenes en actividad de reforestación" src="img/reforestacion3.jpg" />
+                            <figcaption>Reforestación comunitaria para recuperar ecosistemas.</figcaption>
+                        </figure>
+                        <figure class="image-tile h-56">
+                            <img alt="Infografía escolar de ideas sostenibles" src="img/yaSeHace3.png" />
+                            <figcaption>Educación ambiental como base del cambio.</figcaption>
+                        </figure>
+                    </div>
+                </div>
+
+                <p class="section-closure" data-reveal>“El medio ambiente no necesita héroes perfectos; necesita
+                    millones de personas haciendo pequeñas acciones correctas todos los días.”</p>
+            </div>
+        </section>
+
+        <section class="section-shell section-warm" id="conclusion">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid lg:grid-cols-[1fr_.8fr] gap-8 items-start">
+                    <div class="space-y-5" data-reveal>
+                        <p class="eyebrow">Conclusión y compromiso personal</p>
+                        <h2 class="section-title">El futuro del medio ambiente también depende de nosotros</h2>
+
+                        <p class="text-muted leading-relaxed">La elaboración de este sitio permitió comprender que los
+                            problemas ambientales en El Salvador afectan directamente la salud, la biodiversidad y la
+                            calidad de vida de toda la población.</p>
+                        <p class="text-muted leading-relaxed">También permitió reconocer la importancia del Derecho
+                            Ambiental como herramienta para proteger recursos naturales, promover desarrollo sostenible
+                            y
+                            generar conciencia sobre el impacto de las acciones humanas.</p>
+                        <p class="text-muted leading-relaxed">Como estudiante de la Facultad de Derecho de la UTEC, se
+                            asume el compromiso de actuar con responsabilidad ambiental en lo personal, académico y
+                            social.</p>
+
+                        <article class="modern-card">
+                            <h3 class="card-title">Compromiso ambiental personal</h3>
+                            <ul class="card-list">
+                                <li>Reducir el uso de plástico desechable.</li>
+                                <li>Promover reciclaje y reutilización.</li>
+                                <li>Participar en actividades de reforestación.</li>
+                                <li>Evitar contaminación de espacios públicos.</li>
+                                <li>Usar responsablemente los recursos naturales.</li>
+                                <li>Crear conciencia ambiental en el entorno familiar y social.</li>
+                            </ul>
+                        </article>
+
+                        <blockquote class="quote-box">“No heredamos la Tierra de nuestros antepasados; la tomamos
+                            prestada de las futuras generaciones. Cuidarla hoy es garantizar la vida del mañana.”
+                        </blockquote>
+                    </div>
+
+                    <div class="space-y-4" data-reveal>
+                        <figure class="image-tile h-[260px]">
+                            <img alt="Niñez participando en reforestación" src="img/reforestacion.jpg" />
+                            <figcaption>Compromiso intergeneracional con el ambiente.</figcaption>
+                        </figure>
+                        <figure class="image-tile h-[260px]">
+                            <img alt="Campaña escolar de educación ambiental" src="img/reutilizar2.jpg" />
+                            <figcaption>Conciencia ambiental desde la educación.</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-shell" id="fuentes">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="max-w-3xl" data-reveal>
+                    <p class="eyebrow">Fuentes de información</p>
+                    <h2 class="section-title">Fuentes confiables utilizadas</h2>
+                    <p class="text-muted mt-3">Referencias institucionales, educativas e internacionales consultadas en
+                        el desarrollo del contenido.</p>
+                </div>
+
+                <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-5 mt-8" data-reveal>
+                    <article class="modern-card">
+                        <h3 class="card-title">Instituciones ambientales y gubernamentales</h3>
+                        <ul class="source-list">
+                            <li><a href="https://www.marn.gob.sv" rel="noopener noreferrer" target="_blank">Ministerio
+                                    de
+                                    Medio Ambiente y Recursos Naturales de El Salvador (MARN)</a></li>
+                            <li><a href="https://fiaes.org.sv" rel="noopener noreferrer" target="_blank">FIAES – Fondo
+                                    de
+                                    la Iniciativa para las Américas El Salvador</a></li>
+                            <li><a href="https://www.unep.org/es" rel="noopener noreferrer" target="_blank">Programa de
+                                    las Naciones Unidas para el Medio Ambiente (PNUMA)</a></li>
+                        </ul>
+                    </article>
+
+                    <article class="modern-card">
+                        <h3 class="card-title">Artículos y recursos educativos</h3>
+                        <ul class="source-list">
+                            <li><a href="https://www.nationalgeographicla.com/medio-ambiente" rel="noopener noreferrer"
+                                    target="_blank">National Geographic en Español – Medio Ambiente</a></li>
+                            <li><a href="https://www.worldwildlife.org" rel="noopener noreferrer" target="_blank">WWF
+                                    –
+                                    World Wildlife Fund</a></li>
+                        </ul>
+                    </article>
+
+                    <article class="modern-card">
+                        <h3 class="card-title">Videos educativos recomendados</h3>
+                        <ul class="source-list">
+                            <li><a href="https://www.youtube.com/results?search_query=MARN+El+Salvador"
+                                    rel="noopener noreferrer" target="_blank">Canal de YouTube del MARN El Salvador</a>
+                            </li>
+                            <li><a href="https://www.youtube.com/results?search_query=TED-Ed+espa%C3%B1ol+medio+ambiente"
+                                    rel="noopener noreferrer" target="_blank">TED-Ed Español – Medio Ambiente y
+                                    Cambio
+                                    Climático</a></li>
+                        </ul>
+                    </article>
+                </div>
+
+                <div class="video-grid mt-8" data-reveal>
+                    <article class="video-card">
+                        <h3 class="card-title">MARN El Salvador - Contenido educativo ambiental</h3>
+                        <p class="card-text">Video educativo sobre reciclaje, biodiversidad y protección ambiental en El
+                            Salvador.</p>
+
+                        <div class="video-frame">
+                            <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/ao251icAbHs?si=ZZrcNtO3bHjdyAna"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </article>
+
+                    <article class="video-card">
+                        <h3 class="card-title">TED-Ed Español - Medio ambiente y cambio climático</h3>
+                        <p class="card-text">Video educativo con una explicación clara sobre medio ambiente,
+                            sostenibilidad y cambio climático.</p>
+
+                        <div class="video-frame">
+                            <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/sKgSyDusN1A?si=j03vvLHZ7UB6wzI4"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
+                                loading="lazy"></iframe>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="mt-10 pt-6 border-t border-line text-sm text-muted" data-reveal>
+                    <p class="font-semibold text-ink">Proyecto académico:</p>
+                    <p>Derecho Ambiental 4R · Estudiante: Ludwing Alejandro Corleto Jovel · Facultad de Derecho UTEC.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-8 border-t border-line bg-paper">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-sm text-muted flex flex-wrap gap-2 justify-between">
+            <span>Derecho Ambiental 4R</span>
+            <span>“El verdadero progreso no consiste en destruir la naturaleza, sino en aprender a vivir en armonía
+                con
+                ella.”</span>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
